@@ -5,7 +5,7 @@ SET DATEFIRST 1; --1- ПОНЕДЕЛЬНИК
 
 DECLARE @group					AS INT			=(SELECT group_id			FROM Groups			WHERE group_name= N'PV_319');
 DECLARE @discipline				AS SMALLINT		=(SELECT discipline_id		FROM Disciplines	WHERE discipline_name LIKE N'Объектно-ориентированное программирование%');
-DECLARE @teacher				AS SMALLINT		=(SELECT teacher_id			FROM Teachers		WHERE first_name=N'Олег Анатольевич');
+DECLARE @teacher				AS SMALLINT		=(SELECT teacher_id			FROM Teachers		WHERE first_name=N'Олег');
 DECLARE @start_date				AS DATE			= N'2024-06-01';
 DECLARE @date					AS DATE			= @start_date;
 DECLARE @number_of_lessons		AS TINYINT		=(SELECT number_of_lessons	FROM Disciplines	WHERE discipline_id=@discipline);
@@ -18,9 +18,20 @@ BEGIN
 		PRINT(DATENAME(WEEKDAY,@date));
 		PRINT(@lesson);
 		PRINT(@time);
+-- 1 пара
+		INSERT Schedule
+				([group],discipline,teacher,[date],[time],spent)
+		VALUES	(@group,@discipline,@teacher,@date,@time,IIF(@date<GETDATE(),1,0));
+		-- IIF (condition,value_1,value_2);
+
 		SET @lesson= @lesson+1;
 		PRINT(@lesson);
 		PRINT(DATEADD(MINUTE,95,@time));
+--2 пара
+		INSERT Schedule
+					([group],discipline,teacher,[date],[time],spent)
+		values		(@group,@discipline,@teacher,@date,DATEADD(MINUTE,95,@time),IIF(@date<GETDATE(),1,0));
+
 		SET @lesson= @lesson+1;
 		PRINT ('---------------------------');
 		IF(DATEPART(WEEKDAY,@date)=6)
@@ -38,4 +49,4 @@ END
 --VALUES
 --			(319,	1,	1,	N'2023-11-23',N'18:30',1);
 
---SELECT *FROM Schedule;
+SELECT *FROM Schedule;
