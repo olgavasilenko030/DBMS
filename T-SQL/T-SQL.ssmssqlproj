@@ -22,6 +22,12 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="dz-select from schedule during the period.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-R7PT1NM\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-R7PT1NM\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>dz-select from schedule during the period.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery0 -SELECT FROM SCHEDUL.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-R7PT1NM\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-R7PT1NM\SQLEXPRESS</AssociatedConnSrvName>
@@ -39,6 +45,24 @@
           <AssociatedConnSrvName>DESKTOP-R7PT1NM\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SQLQuery1 -INSERT PV_319.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2-CREATE  PROG ScheduleForStacionarGroup.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-R7PT1NM\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-R7PT1NM\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2-CREATE  PROG ScheduleForStacionarGroup.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2-CREATE PROC PrintScheduleForGroup.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-R7PT1NM\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-R7PT1NM\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2-CREATE PROC PrintScheduleForGroup.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2-Schedule procedures test.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-R7PT1NM\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-R7PT1NM\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2-Schedule procedures test.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
