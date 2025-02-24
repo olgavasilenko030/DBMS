@@ -14,7 +14,8 @@ GO
 --SELECT *FROM Schedule;
  
 
-PRINT(DATENAME(WEEKDAY,N'2023-11-23'));
-PRINT(DATEPART(WEEKDAY,N'2023-11-23'));
+--PRINT(DATENAME(WEEKDAY,N'2023-11-23'));
+--PRINT(DATEPART(WEEKDAY,N'2023-11-23'));
+--DROP PROCEDURE sp_ScheduleForBaseStacionarGroup;
 
 EXEC sp_ScheduleForBaseStacionarGroup N'PV_319', N'Процедурное программирование %', N'Ковтун', N'2023-11-23', '18:30', 2,4,6,2,1;
