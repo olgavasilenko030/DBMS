@@ -24,6 +24,7 @@ ALTER PROCEDURE sp_PrintScheduleForGroup
 		AND		discipline		= discipline_id
 		AND		teacher			= teacher_id
 		AND		group_name		= @group_name
-		AND		discipline_name	LIKE  IIF(@discipline_name = Null,N'%',discipline_name);
+		AND		discipline_name	LIKE  IIF(@discipline_name = Null,N'%',discipline_name)
+		ORDER BY [date]
 		;
 	END
