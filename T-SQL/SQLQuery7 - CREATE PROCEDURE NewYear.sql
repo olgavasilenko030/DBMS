@@ -7,7 +7,7 @@ CREATE PROCEDURE sp_AddNewYearHolidaysFor
 AS
 BEGIN
 
-	DECLARE @new_year_date			AS DATE		= DATEFROMPARTS(2025,01,01);
+	DECLARE @new_year_date			AS DATE		= DATEFROMPARTS(@year,01,01);
 	DECLARE @weekday		AS TINYINT	= DATEPART(WEEKDAY,@new_year_date);
 	DECLARE @start_date		AS DATE		= DATEADD(DAY,1-@weekday,@new_year_date); -- или -@weekday+1
 	DECLARE @date			AS DATE		= @start_date;
