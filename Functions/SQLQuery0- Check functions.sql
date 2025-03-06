@@ -28,4 +28,5 @@ GO
 --		)
 --		PRINT(@start_date);
 
-PRINT (dbo.GetEasterDate(2005));
+PRINT (dbo.GetEasterDate(2004));
+PRINT (dbo.GetHolidaysStartDate(N'Δενό%', 2025));
