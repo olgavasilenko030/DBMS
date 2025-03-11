@@ -29,4 +29,5 @@ GO
 --		PRINT(@start_date);
 
 PRINT (dbo.GetEasterDate(2004));
-PRINT (dbo.GetHolidaysStartDate(N'Δενό%', 2025));
+--PRINT (dbo.GetHolidaysStartDate(N'Δενό%', 2025));
+PRINT(dbo.CetLastDateForGroup(N'PV_319'));
