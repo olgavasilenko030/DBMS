@@ -31,3 +31,11 @@ GO
 PRINT (dbo.GetEasterDate(2004));
 --PRINT (dbo.GetHolidaysStartDate(N'Δενό%', 2025));
 PRINT(dbo.CetLastDateForGroup(N'PV_319'));
+
+
+--PRINT (dbo.GetMaxLearningDayFor(N'PV_319'));
+--EXEC sp_GetMaxLearningDayFor N'PV_319';
+--INSERT Schedule([group], discipline, teacher, [date], [time], spent)
+--VALUES (319, 5, 1, '2024-09-03', '18:30', 1);
+PRINT (dbo.GetNextLearningDayFor(N'PV_319'));
+EXEC sp_PrintScheduleForGroup N'PV_319';

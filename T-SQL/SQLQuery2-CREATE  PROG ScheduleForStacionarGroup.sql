@@ -4,14 +4,15 @@ GO
 ALTER PROCEDURE dbo.sp_SetSheduleForStacionarGroup
 	@group_name				NVARCHAR(16),
 	@discipline_name		NVARCHAR(150),
-	@teacher_last_name		NVARCHAR(50),
-	@start_date				DATE,
-	@time					TIME(0)
+	@teacher_last_name		NVARCHAR(50)--,
+	--@start_date				DATE,
+	--@time					TIME(0)
 
 AS 
 BEGIN
 SET DATEFIRST 1; --1- œŒÕ≈ƒ≈À‹Õ» 
 
+DECLARE @start_date				AS DATE			= dbo.CetLastDateForGroup(@group_name);
 DECLARE @group					AS INT			=(SELECT group_id			FROM Groups			WHERE group_name= @group_name);
 DECLARE @discipline				AS SMALLINT		=(SELECT discipline_id		FROM Disciplines	WHERE discipline_name LIKE @discipline_name);
 DECLARE @teacher				AS SMALLINT		=(SELECT teacher_id			FROM Teachers		WHERE last_name=@teacher_last_name);
