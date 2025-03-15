@@ -28,6 +28,12 @@
           <AssociatedConnUserName />
           <FullPath>dz-select from schedule during the period.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery0 - Days check.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-R7PT1NM\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-R7PT1NM\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery0 - Days check.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery0 - Holidays test.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-R7PT1NM\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-R7PT1NM\SQLEXPRESS</AssociatedConnSrvName>
@@ -111,6 +117,12 @@
           <AssociatedConnSrvName>DESKTOP-R7PT1NM\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SQLQuery7 - CREATE PROCEDURE sp_AddAllHolidaysFor.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery8 - Group days.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-R7PT1NM\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>DESKTOP-R7PT1NM\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery8 - Group days.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

@@ -39,3 +39,13 @@ PRINT(dbo.CetLastDateForGroup(N'PV_319'));
 --VALUES (319, 5, 1, '2024-09-03', '18:30', 1);
 PRINT (dbo.GetNextLearningDayFor(N'PV_319'));
 EXEC sp_PrintScheduleForGroup N'PV_319';
+
+DECLARE @group		AS NVARCHAR (10) =N'PV_319';
+DECLARE @date		AS DATE = dbo.CetLastDateForGroup(@group);
+WHILE @date <'2025-01-01'
+BEGIN
+	PRINT(@date);
+	PRINT(DATENAME(WEEKDAY,@date));
+	PRINT('----------------');
+	SET @date = dbo.GetNextLearningDateFor(@group);
+END
